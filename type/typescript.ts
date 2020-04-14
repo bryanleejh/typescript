@@ -26,3 +26,44 @@ let wizard: object = {
 // null and undefined
 let meh: undefined = undefined;
 let noo: null = null;
+
+// tuple
+let basket: [string, number];
+basket = ['basketball', 5];
+
+// enum
+enum Size { Small = 1, Medium = 2, Large = 3 }
+let sizeName: number = Size.Small;
+
+// any
+let whatever: any = 'asdasdasd';
+whatever = basket;
+
+// void
+let sing = (): void => {
+  console.log('lalala');
+}
+
+// never
+let error = (): never => {
+  throw Error('oops');
+}
+
+// interface
+interface RobotArmy {
+  count: number,
+  type: string,
+  magic: string
+}
+
+let fightRobotArmy = (robots: RobotArmy) => {
+  console.log('fight');
+}
+
+let fightRobotArmy2 = (robots: {
+  count: number,
+  type: string,
+  magic: string
+}) => {
+  console.log('fight');
+}
